@@ -1,6 +1,8 @@
 import Chai from "./chai"
 
 function App() {
+
+  const username = "Sarang Raut"
   return (
     // <Chai />
     // <h1>Chai aur React</h1> // we cant return more than one tag,
@@ -11,7 +13,7 @@ function App() {
 
     <>
       <Chai />
-      <h1>Chai Aur React</h1>
+      <h1>React with {username}</h1>
       <p>Hello, How are you?</p>
     </>
   )
