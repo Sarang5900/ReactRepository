@@ -14,7 +14,13 @@ function App() {
       setCounter(20)
     } else {
       //counter = counter+1
+      setCounter(counter + 1) 
       setCounter(counter + 1)
+      setCounter(counter + 1)
+      setCounter(counter + 1)
+      // setCounter((prevCounter) => prevCounter + 1)
+      // setCounter((prevCounter) => prevCounter + 1)
+      // setCounter((prevCounter) => prevCounter + 1)
       console.log('add clicked', counter);
     }
   }
