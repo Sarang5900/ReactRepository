@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #000;
+  }
+
+  h2 {
+    color: #fff
+  }
+
+  div {
+    color: #fff
+  }
+
+  input, textarea, button, select {
+    color: #fff; /* Ensures input text is white */
+    background-color: #333; /* Dark background for inputs */
+    border: 1px solid #555; /* Subtle border for inputs */
+    padding: 10px; /* Adds padding inside inputs */
+    margin-bottom: 10px; /* Adds space between inputs */
+    border-radius: 4px; /* Rounds the corners of inputs */
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aaa; /* Lighter grey for placeholder text */
+  }
+  
+  button {
+    background-color: #007BFF; /* Bright blue background for the button */
+    color: #fff; /* White text for button */
+    border: none; /* Removes default button border */
+    cursor: pointer; /* Changes cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover for the button */
+  }
