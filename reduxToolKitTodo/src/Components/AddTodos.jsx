@@ -6,12 +6,22 @@ import { useState } from 'react'
 function AddTodos() {
 
     const [input, setInput] = useState('')
+    const [error, setError] = useState('')
     const dispatch = useDispatch()
 
     const addTodoHandler = (e) => {
         e.preventDefault()
+
+        if (input.trim() === '') {
+            
+            setError('Input cannot be empty');
+            // alert("Input cannot be empty");
+            return;
+        }
+
         dispatch(addTodo(input))
         setInput('')
+        setError('')
     }
 
     return (
@@ -35,6 +45,9 @@ function AddTodos() {
             >
                 Add Todo
             </button>
+
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            
         </form>
     )
 }
